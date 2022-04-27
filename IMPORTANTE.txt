@@ -1,0 +1,44 @@
+VIDEO 32
+
+CSS
+HOJA EXTERNA (Para que todas las paginas tengo el mismo formato) Video 2-3
+PUBLICACIONES DE GALERIA DE IMAGENES (Cambia de posiciones de imagenes) Video 20
+BARRA DE NAVEGACION ()Video 25-26
+ESTRUCTURAS DIVICION DE PAGINA WEB (DISEÑO LIQUIDO)Video 29
+IMAGENES OPACAS Y QUE SE OSCURECEN AL PASAR EL MOUSE ()Video 35 Min19
+
+DJANGO
+PASAR PARAMENTROS ENTRE URL () VIDEO 4
+Plantillas 8-9 () 
+Quede en el video 28
+INGRESAR NUEVOS DOCUMENTOS DESDE ADMIN () VIDEO 33-34-35
+
+
+NOTAS
+Averiguar sobre contenedores (HTML ó CSS)
+-----
+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
+-----
+LINEAS GIT
+SUBIR PROYECTO
+--------------------------------------------
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/cristiantodi/mape.git
+git push -u origin master
+------------------------------------------
+echo "# mape" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/cristiantodi/mape.git
+git push -u origin main
+-----------------------------------------------------------------
+
+CLONAR
+Mirar en que carpeta esta guardado
+git clone
+
