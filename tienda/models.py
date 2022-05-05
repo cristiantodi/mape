@@ -11,8 +11,8 @@ class CategoriaProd(models.Model):
     updated=models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        verbose_name = "CategoriaProd"
-        verbose_name_plural = "CategoriasProd"
+        verbose_name = "Categoria_Producto"
+        verbose_name_plural = "Categorias_Productos"
 
     def __str__(self):
         return self.nombre
@@ -25,6 +25,9 @@ class Producto(models.Model):
     diponibilidad=models.BooleanField(default=True)
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.nombre
 
     class Meta:
         verbose_name = 'Producto'
