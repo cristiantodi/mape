@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tienda',
     'carro',
     'registros',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -111,8 +112,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-#LANGUAGE_CODE = 'es-eu'
+#LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-eu'
 
 
 TIME_ZONE = 'UTC'
@@ -138,3 +139,7 @@ EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER="katoleko@gmail.com"
 EMAIL_HOST_PASSWORD="toleko89"
+
+
+#Cargar el paquete CRYSPI
+CRISPY_TEMPLATE_PACK='bootstrap4'
