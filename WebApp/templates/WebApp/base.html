@@ -21,14 +21,22 @@
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       
-        <span class="site-heading-lower">ENVIOS CRISTIAN TOLE PRUEBA 1 Sincronizar</span>
+        <span class="site-heading-lower">ENVIOS CRISTIAN TOLE</span>
       </h1>
 
+    <div style=" text-align:right; margin-right:100px; color:white">
+    
+    {% if user.is_authenticated %}
+        Hola {{user.username}} &nbsp;&nbsp<a style="color:white;" href="{% url 'Cerrar_sesion' %}">Cerrar Sesion</a>
+    {% else %}
+        <a href="#">Login</a>&nbsp; &nbsp; <a href="{% url 'Registros' %}">Registrar</a>
+    {% endif %}
+    </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Gestión de Pedidos</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">ENVIOS CRISTIAN TOLE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

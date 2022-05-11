@@ -4,7 +4,7 @@ from django.views.generic import View
 
 from django.contrib.auth.forms import UserCreationForm
 
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 
 from django.contrib import messages
 
@@ -30,3 +30,6 @@ class VRegistro(View):
 
             return render(request,"registros/registros.html",{"form":form})
 
+def CerrarSesion(request):
+    logout(request)
+    return redirect('Home')
