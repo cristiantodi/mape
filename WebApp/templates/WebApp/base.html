@@ -29,7 +29,7 @@
     {% if user.is_authenticated %}
         Hola {{user.username}} &nbsp;&nbsp<a style="color:white;" href="{% url 'Cerrar_sesion' %}">Cerrar Sesion</a>
     {% else %}
-        <a href="#">Login</a>&nbsp; &nbsp; <a href="{% url 'Registros' %}">Registrar</a>
+        <a href="{% url 'logear' %}">Login</a>&nbsp; &nbsp; <a href="{% url 'Registros' %}">Registrar</a>
     {% endif %}
     </div>
 
