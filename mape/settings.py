@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 from pathlib import Path
 import os
 
+from django.contrib.messages import constants as mensaje_error
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -143,3 +145,11 @@ EMAIL_HOST_PASSWORD="toleko89"
 
 #Cargar el paquete CRYSPI
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+MESSAGE_TAGS={
+    mensaje_error.DEBUG:'debug',
+    mensaje_error.INFO:'debug',
+    mensaje_error.SUCCESS:'debug',
+    mensaje_error.WARNING:'debug',
+    mensaje_error.ERROR:'debug',
+}
