@@ -146,7 +146,7 @@ EMAIL_HOST_PASSWORD="toleko89"
 #Cargar el paquete CRYSPI
 CRISPY_TEMPLATE_PACK='bootstrap4'
 
-MESSAGE_TAGS={
+MESSAGE_TAGS={   ## PARA TRABAJAR LOS DIFERENTES MENSAJES DE ERROR
     mensaje_error.DEBUG:'debug',
     mensaje_error.INFO:'debug',
     mensaje_error.SUCCESS:'debug',
